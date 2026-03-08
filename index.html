@@ -1,9 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+  ad_storage: 'denied',
+  analytics_storage: 'denied',
+  ad_user_data: 'denied',
+  ad_personalization: 'denied',
+  wait_for_update: 500
+});
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AulaRepàs – Academia de Repaso en Sabadell</title>
+
+<meta name="description" content="AulaRepàs - Academia de refuerzo escolar en Sabadell para primaria, ESO y bachillerato. Mejora notas con profesores especializados.">
+<meta name="keywords" content="academia Sabadell, refuerzo escolar Sabadell, clases particulares Sabadell, academia repaso">
+<meta name="robots" content="index,follow">
+
+<meta property="og:title" content="AulaRepàs – Academia de Repaso en Sabadell">
+<meta property="og:description" content="Refuerzo escolar personalizado para primaria, ESO y bachillerato en Sabadell.">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -539,7 +563,31 @@
 
   INSTRUCCIONES DE USO:
   1. Pega el bloque <style> dentro del <head> de tu Landing Page.
-  2. Pega el bloque HTML justo antes del cierre </body>.
+  2. Pega el bloque HTML justo antes del cierre 
+<style>
+.honeypot{display:none !important;}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+const forms=document.querySelectorAll("form");
+forms.forEach(f=>{
+let hp=document.createElement("input");
+hp.type="text";
+hp.name="company";
+hp.className="honeypot";
+f.appendChild(hp);
+
+f.addEventListener("submit",function(e){
+if(hp.value!==""){
+e.preventDefault();
+}
+});
+});
+});
+</script>
+
+</body>.
   3. Pega el bloque <script> justo antes del cierre </body>, después del HTML.
   4. No necesitas ninguna librería externa. Todo es CSS + JS vanilla.
 
