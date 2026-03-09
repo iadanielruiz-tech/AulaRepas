@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aviso Legal – AulaRepàs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #1a3a5c;
+    --accent:  #e63946;
+    --accent2: #2a9d8f;
+    --light:   #f8f9fa;
+    --dark:    #0d1b2a;
+    --text:    #2c3e50;
+    --muted:   #6c757d;
+    --white:   #ffffff;
+    --border:  #e9ecef;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'DM Sans',sans-serif; color:var(--text); background:var(--white); }
+
+  /* ── HEADER (idéntico a index.html) ── */
+  header {
+    background:var(--dark); padding:0 2rem;
+    box-shadow:0 2px 20px rgba(0,0,0,0.15);
+  }
+  .header-inner {
+    max-width:1200px; margin:0 auto;
+    display:flex; align-items:center; justify-content:space-between; height:70px;
+  }
+  .logo {
+    font-family:'Playfair Display',serif; font-size:1.6rem; font-weight:700;
+    color:var(--white); text-decoration:none;
+  }
+  .logo span { color:var(--accent); }
+  .back-link {
+    color:rgba(255,255,255,0.7); text-decoration:none; font-size:0.85rem;
+    font-weight:500; display:flex; align-items:center; gap:0.4rem;
+    transition:color 0.2s;
+  }
+  .back-link:hover { color:white; }
+
+  /* ── HERO LEGAL ── */
+  .legal-hero {
+    background:linear-gradient(135deg,#1a3a5c 0%,#0d1b2a 100%);
+    padding:60px 2rem 50px; text-align:center;
+  }
+  .legal-hero h1 {
+    font-family:'Playfair Display',serif; font-size:clamp(2rem,4vw,3rem);
+    color:white; margin-bottom:0.75rem;
+  }
+  .legal-hero p { color:rgba(255,255,255,0.6); font-size:0.9rem; }
+
+  /* ── LANG TABS ── */
+  .lang-tabs {
+    display:flex; justify-content:center; gap:0.5rem;
+    padding:1.5rem 2rem 0; background:var(--light);
+  }
+  .lang-tab {
+    background:transparent; border:1.5px solid var(--border);
+    color:var(--muted); font-family:'DM Sans',sans-serif;
+    font-size:0.82rem; font-weight:600; padding:0.5rem 1.2rem;
+    border-radius:6px; cursor:pointer; transition:all 0.2s;
+    letter-spacing:0.5px;
+  }
+  .lang-tab.active, .lang-tab:hover {
+    background:var(--primary); color:white; border-color:var(--primary);
+  }
+
+  /* ── CONTENT ── */
+  .legal-body { background:var(--light); padding:3rem 2rem 5rem; }
+  .legal-content {
+    max-width:860px; margin:0 auto;
+    background:white; border-radius:16px; padding:3rem;
+    box-shadow:0 4px 24px rgba(0,0,0,0.07);
+  }
+  .lang-block { display:none; }
+  .lang-block.active { display:block; }
+
+  h2 {
+    font-family:'Playfair Display',serif; font-size:1.4rem;
+    color:var(--primary); margin:2.5rem 0 1rem;
+    padding-bottom:0.5rem; border-bottom:2px solid var(--border);
+  }
+  h2:first-child { margin-top:0; }
+  h3 { font-size:1rem; color:var(--primary); margin:1.5rem 0 0.5rem; font-weight:700; }
+  p  { line-height:1.8; color:var(--text); margin-bottom:1rem; font-size:0.92rem; }
+  ul { padding-left:1.5rem; margin-bottom:1rem; }
+  li { line-height:1.8; font-size:0.92rem; margin-bottom:0.25rem; }
+  a  { color:var(--accent2); }
+  .highlight-box {
+    background:rgba(42,157,143,0.07); border-left:4px solid var(--accent2);
+    border-radius:0 8px 8px 0; padding:1rem 1.25rem; margin:1.5rem 0;
+  }
+  .highlight-box p { margin-bottom:0; }
+  .update-date {
+    display:inline-block; background:var(--light); border:1px solid var(--border);
+    border-radius:6px; padding:0.4rem 1rem; font-size:0.8rem;
+    color:var(--muted); margin-bottom:2rem;
+  }
+
+  /* ── FOOTER ── */
+  footer { background:var(--dark); color:rgba(255,255,255,0.6); padding:2.5rem 2rem; }
+  .footer-inner {
+    max-width:1200px; margin:0 auto;
+    display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;
+  }
+  .footer-logo { font-family:'Playfair Display',serif; font-size:1.3rem; color:white; }
+  .footer-logo span { color:var(--accent); }
+  .footer-copy { font-size:0.8rem; }
+  .footer-links { display:flex; gap:1.25rem; flex-wrap:wrap; }
+  .footer-links a { color:rgba(255,255,255,0.5); text-decoration:none; font-size:0.8rem; transition:color 0.2s; }
+  .footer-links a:hover { color:white; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">Aula<span>Repàs</span></a>
+    <a href="index.html" class="back-link">← Volver al inicio</a>
+  </div>
+</header>
+
+<div class="legal-hero">
+  <h1>Aviso Legal</h1>
+  <p>Información legal obligatoria según la LSSI-CE y el RGPD</p>
+</div>
+
+<!-- Selector de idioma -->
+<div class="lang-tabs">
+  <button class="lang-tab active" onclick="showLang('es',this)">Español</button>
+  <button class="lang-tab"        onclick="showLang('ca',this)">Català</button>
+  <button class="lang-tab"        onclick="showLang('en',this)">English</button>
+</div>
+
+<div class="legal-body">
+  <div class="legal-content">
+
+    <!-- ══════════ ESPAÑOL ══════════ -->
+    <div class="lang-block active" id="lang-es">
+      <span class="update-date">Última actualización: marzo 2025</span>
+
+      <h2>1. Datos identificativos del titular</h2>
+      <p>En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSI-CE), se informa de los datos identificativos del titular de este sitio web:</p>
+      <ul>
+        <li><strong>Titular:</strong> Marta Bergadà Escoda</li>
+        <li><strong>NIF:</strong> 38141266K</li>
+        <li><strong>Actividad:</strong> Academia de repaso y coaching educativo</li>
+        <li><strong>Domicilio:</strong> C/ Jaume I, 10, 08206 Sabadell (Barcelona)</li>
+        <li><strong>Teléfono:</strong> 686 143 541</li>
+        <li><strong>Correo electrónico:</strong> <a href="/cdn-cgi/l/email-protection#ec818d9e988d8e899e8b8d888d899f8f83888dac8b818d8580c28f8381"><span class="__cf_email__" data-cfemail="9cf1fdeee8fdfef9eefbfdf8fdf9effff3f8fddcfbf1fdf5f0b2fff3f1">[email&#160;protected]</span></a></li>
+        <li><strong>Sitio web:</strong> <a href="https://webaularepas.netlify.app">https://webaularepas.netlify.app</a></li>
+      </ul>
+      <div class="highlight-box">
+      </div>
+
+      <h2>2. Objeto y ámbito de aplicación</h2>
+      <p>El presente Aviso Legal regula el acceso y la utilización del sitio web <strong>https://webaularepas.netlify.app</strong> (en adelante, "el Sitio Web"), titularidad de Marta Bergadà Escoda, con domicilio en Sabadell (Barcelona). El acceso y uso del Sitio Web implica la aceptación plena y sin reservas de todas las disposiciones incluidas en este Aviso Legal.</p>
+
+      <h2>3. Propiedad intelectual e industrial</h2>
+      <p>Todos los contenidos del Sitio Web —textos, imágenes, logotipos, gráficos, diseño gráfico y código fuente— son propiedad de Marta Bergadà Escoda o de terceros que han autorizado su uso, y están protegidos por la normativa española e internacional sobre propiedad intelectual e industrial.</p>
+      <p>Queda expresamente prohibida la reproducción, distribución, comunicación pública, transformación o cualquier otro uso, total o parcial, de los contenidos del Sitio Web sin la autorización expresa y por escrito del titular.</p>
+
+      <h2>4. Condiciones de uso</h2>
+      <p>El usuario se compromete a hacer un uso adecuado de los contenidos y servicios del Sitio Web y, en particular, se obliga a no:</p>
+      <ul>
+        <li>Utilizar el Sitio Web para fines ilícitos o contrarios a la moral y el orden público.</li>
+        <li>Introducir o difundir contenidos falsos, difamatorios, obscenos o que vulneren derechos de terceros.</li>
+        <li>Realizar actividades que dañen, inutilicen o sobrecargen el Sitio Web o sus sistemas informáticos.</li>
+        <li>Intentar acceder sin autorización a áreas restringidas del Sitio Web.</li>
+      </ul>
+
+      <h2>5. Exclusión de responsabilidad</h2>
+      <h3>5.1 Disponibilidad del Sitio Web</h3>
+      <p>El titular no garantiza la disponibilidad y continuidad del funcionamiento del Sitio Web. Cuando ello sea razonablemente posible, se advertirá previamente de las interrupciones.</p>
+      <h3>5.2 Contenidos y enlaces externos</h3>
+      <p>El titular no se hace responsable del uso que los usuarios hagan de los contenidos ni de los daños derivados de ello. El Sitio Web puede contener enlaces a sitios de terceros; el titular no controla ni se responsabiliza de los contenidos de dichos sitios.</p>
+      <h3>5.3 Virus y seguridad</h3>
+      <p>El titular adopta las medidas técnicas necesarias para garantizar la seguridad del Sitio Web, si bien no garantiza la ausencia absoluta de virus u otros elementos dañinos.</p>
+
+      <h2>6. Legislación aplicable y jurisdicción</h2>
+      <p>Este Aviso Legal se rige por la legislación española vigente. Para la resolución de cualquier controversia derivada del acceso o uso del Sitio Web, las partes se someten, con renuncia expresa a cualquier otro fuero que pudiera corresponderles, a los Juzgados y Tribunales de Sabadell (Barcelona).</p>
+
+      <h2>7. Modificaciones</h2>
+      <p>El titular se reserva el derecho a modificar en cualquier momento el presente Aviso Legal, así como cualquier otro documento legal del Sitio Web. Las modificaciones serán efectivas desde su publicación.</p>
+    </div><!-- /lang-es -->
+
+    <!-- ══════════ CATALÀ ══════════ -->
+    <div class="lang-block" id="lang-ca">
+      <span class="update-date">Última actualització: març 2025</span>
+
+      <h2>1. Dades identificatives del titular</h2>
+      <p>En compliment de l'article 10 de la Llei 34/2002, d'11 de juliol, de Serveis de la Societat de la Informació i del Comerç Electrònic (LSSI-CE), s'informa de les dades identificatives del titular d'aquest lloc web:</p>
+      <ul>
+        <li><strong>Titular:</strong> Marta Bergadà Escoda</li>
+        <li><strong>NIF:</strong> 38141266K</li>
+        <li><strong>Activitat:</strong> Acadèmia de repàs i coaching educatiu</li>
+        <li><strong>Domicili:</strong> C/ Jaume I, 10, 08206 Sabadell (Barcelona)</li>
+        <li><strong>Telèfon:</strong> 686 143 541</li>
+        <li><strong>Correu electrònic:</strong> <a href="/cdn-cgi/l/email-protection#6d000c1f190c0f081f0a0c090c081e0e02090c2d0a000c0401430e0200"><span class="__cf_email__" data-cfemail="b5d8d4c7c1d4d7d0c7d2d4d1d4d0c6d6dad1d4f5d2d8d4dcd99bd6dad8">[email&#160;protected]</span></a></li>
+        <li><strong>Lloc web:</strong> <a href="https://webaularepas.netlify.app">https://webaularepas.netlify.app</a></li>
+      </ul>
+
+      <h2>2. Objecte i àmbit d'aplicació</h2>
+      <p>El present Avís Legal regula l'accés i la utilització del lloc web <strong>https://webaularepas.netlify.app</strong> (d'ara endavant, "el Lloc Web"), titularitat de Marta Bergadà Escoda, amb domicili a Sabadell (Barcelona). L'accés i l'ús del Lloc Web implica l'acceptació plena i sense reserves de totes les disposicions incloses en aquest Avís Legal.</p>
+
+      <h2>3. Propietat intel·lectual i industrial</h2>
+      <p>Tots els continguts del Lloc Web —textos, imatges, logotips, gràfics, disseny gràfic i codi font— són propietat de Marta Bergadà Escoda o de tercers que n'han autoritzat l'ús, i estan protegits per la normativa espanyola i internacional sobre propietat intel·lectual i industrial.</p>
+      <p>Queda expressament prohibida la reproducció, distribució, comunicació pública, transformació o qualsevol altre ús, total o parcial, dels continguts del Lloc Web sense l'autorització expressa i per escrit del titular.</p>
+
+      <h2>4. Condicions d'ús</h2>
+      <p>L'usuari es compromet a fer un ús adequat dels continguts i serveis del Lloc Web i, en particular, s'obliga a no:</p>
+      <ul>
+        <li>Utilitzar el Lloc Web per a fins il·lícits o contraris a la moral i l'ordre públic.</li>
+        <li>Introduir o difondre continguts falsos, difamatoris, obscens o que vulnerin drets de tercers.</li>
+        <li>Realitzar activitats que danyin, inutilitzin o sobrecarreguin el Lloc Web o els seus sistemes informàtics.</li>
+        <li>Intentar accedir sense autorització a àrees restringides del Lloc Web.</li>
+      </ul>
+
+      <h2>5. Exclusió de responsabilitat</h2>
+      <p>El titular no garanteix la disponibilitat i continuïtat del funcionament del Lloc Web. El Lloc Web pot contenir enllaços a llocs de tercers; el titular no controla ni es responsabilitza dels continguts d'aquests llocs.</p>
+
+      <h2>6. Legislació aplicable i jurisdicció</h2>
+      <p>Aquest Avís Legal es regeix per la legislació espanyola vigent. Per a la resolució de qualsevol controvèrsia derivada de l'accés o ús del Lloc Web, les parts se sotmeten als Jutjats i Tribunals de Sabadell (Barcelona).</p>
+
+      <h2>7. Modificacions</h2>
+      <p>El titular es reserva el dret a modificar en qualsevol moment el present Avís Legal. Les modificacions seran efectives des de la seva publicació.</p>
+    </div><!-- /lang-ca -->
+
+    <!-- ══════════ ENGLISH ══════════ -->
+    <div class="lang-block" id="lang-en">
+      <span class="update-date">Last updated: March 2025</span>
+
+      <h2>1. Identification of the website owner</h2>
+      <p>In compliance with Article 10 of Spanish Law 34/2002 on Information Society Services and Electronic Commerce (LSSI-CE), the following information is provided:</p>
+      <ul>
+        <li><strong>Owner:</strong> Marta Bergadà Escoda</li>
+        <li><strong>Tax ID (NIF):</strong> 38141266K</li>
+        <li><strong>Activity:</strong> Tutoring academy and educational coaching</li>
+        <li><strong>Address:</strong> C/ Jaume I, 10, 08206 Sabadell, Barcelona (Spain)</li>
+        <li><strong>Phone:</strong> +34 686 143 541</li>
+        <li><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#a1ccc0d3d5c0c3c4d3c6c0c5c0c4d2c2cec5c0e1c6ccc0c8cd8fc2cecc"><span class="__cf_email__" data-cfemail="610c00131500030413060005000412020e050021060c00080d4f020e0c">[email&#160;protected]</span></a></li>
+        <li><strong>Website:</strong> <a href="https://webaularepas.netlify.app">https://webaularepas.netlify.app</a></li>
+      </ul>
+
+      <h2>2. Purpose and scope</h2>
+      <p>This Legal Notice governs access to and use of the website <strong>https://webaularepas.netlify.app</strong> (hereinafter "the Website"), owned by Marta Bergadà Escoda. Accessing or using the Website implies full and unconditional acceptance of this Legal Notice.</p>
+
+      <h2>3. Intellectual and industrial property</h2>
+      <p>All Website content — texts, images, logos, graphics, graphic design and source code — is the property of Marta Bergadà Escoda or third parties who have authorised its use, and is protected by Spanish and international intellectual and industrial property law. Reproduction, distribution, public communication or any other total or partial use of the Website content without the express written authorisation of the owner is strictly prohibited.</p>
+
+      <h2>4. Terms of use</h2>
+      <p>The user agrees to make appropriate use of the Website and undertakes not to use it for unlawful purposes, introduce false or defamatory content, or carry out activities that damage or overload the Website systems.</p>
+
+      <h2>5. Limitation of liability</h2>
+      <p>The owner does not guarantee the availability or continuity of the Website. The Website may contain links to third-party sites; the owner has no control over and accepts no responsibility for the content of those sites.</p>
+
+      <h2>6. Applicable law and jurisdiction</h2>
+      <p>This Legal Notice is governed by Spanish law. For the resolution of any dispute arising from access to or use of the Website, the parties submit to the Courts of Sabadell, Barcelona (Spain), waiving any other jurisdiction that may apply.</p>
+
+      <h2>7. Amendments</h2>
+      <p>The owner reserves the right to amend this Legal Notice at any time. Amendments take effect upon publication.</p>
+    </div><!-- /lang-en -->
+
+  </div><!-- /legal-content -->
+</div><!-- /legal-body -->
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Aula<span>Repàs</span></div>
+    <div class="footer-copy">© 2025 AulaRepàs · C/ Jaume I, 10 · 08206 Sabadell</div>
+    <div class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="aviso-legal.html">Aviso Legal</a>
+      <a href="politica-privacidad.html">Privacidad</a>
+      <a href="politica-cookies.html">Cookies</a>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.mi
