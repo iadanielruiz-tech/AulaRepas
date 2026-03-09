@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad – AulaRepàs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #1a3a5c; --accent: #e63946; --accent2: #2a9d8f;
+    --light: #f8f9fa; --dark: #0d1b2a; --text: #2c3e50;
+    --muted: #6c757d; --white: #ffffff; --border: #e9ecef;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'DM Sans',sans-serif; color:var(--text); background:var(--white); }
+  header { background:var(--dark); padding:0 2rem; box-shadow:0 2px 20px rgba(0,0,0,0.15); }
+  .header-inner { max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; height:70px; }
+  .logo { font-family:'Playfair Display',serif; font-size:1.6rem; font-weight:700; color:var(--white); text-decoration:none; }
+  .logo span { color:var(--accent); }
+  .back-link { color:rgba(255,255,255,0.7); text-decoration:none; font-size:0.85rem; font-weight:500; display:flex; align-items:center; gap:0.4rem; transition:color 0.2s; }
+  .back-link:hover { color:white; }
+  .legal-hero { background:linear-gradient(135deg,#1a3a5c 0%,#0d1b2a 100%); padding:60px 2rem 50px; text-align:center; }
+  .legal-hero h1 { font-family:'Playfair Display',serif; font-size:clamp(2rem,4vw,3rem); color:white; margin-bottom:0.75rem; }
+  .legal-hero p { color:rgba(255,255,255,0.6); font-size:0.9rem; }
+  .lang-tabs { display:flex; justify-content:center; gap:0.5rem; padding:1.5rem 2rem 0; background:var(--light); }
+  .lang-tab { background:transparent; border:1.5px solid var(--border); color:var(--muted); font-family:'DM Sans',sans-serif; font-size:0.82rem; font-weight:600; padding:0.5rem 1.2rem; border-radius:6px; cursor:pointer; transition:all 0.2s; letter-spacing:0.5px; }
+  .lang-tab.active, .lang-tab:hover { background:var(--primary); color:white; border-color:var(--primary); }
+  .legal-body { background:var(--light); padding:3rem 2rem 5rem; }
+  .legal-content { max-width:860px; margin:0 auto; background:white; border-radius:16px; padding:3rem; box-shadow:0 4px 24px rgba(0,0,0,0.07); }
+  .lang-block { display:none; }
+  .lang-block.active { display:block; }
+  h2 { font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--primary); margin:2.5rem 0 1rem; padding-bottom:0.5rem; border-bottom:2px solid var(--border); }
+  h2:first-child { margin-top:0; }
+  h3 { font-size:1rem; color:var(--primary); margin:1.5rem 0 0.5rem; font-weight:700; }
+  p { line-height:1.8; color:var(--text); margin-bottom:1rem; font-size:0.92rem; }
+  ul { padding-left:1.5rem; margin-bottom:1rem; }
+  li { line-height:1.8; font-size:0.92rem; margin-bottom:0.25rem; }
+  a { color:var(--accent2); }
+  table { width:100%; border-collapse:collapse; margin:1.5rem 0; font-size:0.88rem; }
+  th { background:var(--primary); color:white; padding:0.75rem 1rem; text-align:left; font-weight:600; }
+  td { padding:0.7rem 1rem; border-bottom:1px solid var(--border); vertical-align:top; }
+  tr:last-child td { border-bottom:none; }
+  tr:nth-child(even) td { background:var(--light); }
+  .highlight-box { background:rgba(42,157,143,0.07); border-left:4px solid var(--accent2); border-radius:0 8px 8px 0; padding:1rem 1.25rem; margin:1.5rem 0; }
+  .highlight-box p { margin-bottom:0; }
+  .rights-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; margin:1.5rem 0; }
+  .right-card { background:var(--light); border-radius:10px; padding:1rem; border-top:3px solid var(--accent2); }
+  .right-card strong { display:block; color:var(--primary); margin-bottom:0.4rem; font-size:0.9rem; }
+  .right-card span { font-size:0.82rem; color:var(--muted); line-height:1.5; }
+  .update-date { display:inline-block; background:var(--light); border:1px solid var(--border); border-radius:6px; padding:0.4rem 1rem; font-size:0.8rem; color:var(--muted); margin-bottom:2rem; }
+  footer { background:var(--dark); color:rgba(255,255,255,0.6); padding:2.5rem 2rem; }
+  .footer-inner { max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
+  .footer-logo { font-family:'Playfair Display',serif; font-size:1.3rem; color:white; }
+  .footer-logo span { color:var(--accent); }
+  .footer-copy { font-size:0.8rem; }
+  .footer-links { display:flex; gap:1.25rem; flex-wrap:wrap; }
+  .footer-links a { color:rgba(255,255,255,0.5); text-decoration:none; font-size:0.8rem; transition:color 0.2s; }
+  .footer-links a:hover { color:white; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">Aula<span>Repàs</span></a>
+    <a href="index.html" class="back-link">← Volver al inicio</a>
+  </div>
+</header>
+
+<div class="legal-hero">
+  <h1>Política de Privacidad</h1>
+  <p>Información sobre el tratamiento de sus datos personales · RGPD (UE) 2016/679 · LOPD-GDD</p>
+</div>
+
+<div class="lang-tabs">
+  <button class="lang-tab active" onclick="showLang('es',this)">Español</button>
+  <button class="lang-tab"        onclick="showLang('ca',this)">Català</button>
+  <button class="lang-tab"        onclick="showLang('en',this)">English</button>
+</div>
+
+<div class="legal-body">
+  <div class="legal-content">
+
+    <!-- ══════════ ESPAÑOL ══════════ -->
+    <div class="lang-block active" id="lang-es">
+      <span class="update-date">Última actualización: marzo 2025</span>
+
+      <h2>1. Responsable del tratamiento</h2>
+      <table>
+        <tr><th>Dato</th><th>Información</th></tr>
+        <tr><td><strong>Responsable</strong></td><td>Marta Bergadà Escoda</td></tr>
+        <tr><td><strong>NIF</strong></td><td>38141266K</td></tr>
+        <tr><td><strong>Domicilio</strong></td><td>C/ Jaume I, 10, 08206 Sabadell (Barcelona)</td></tr>
+        <tr><td><strong>Correo electrónico</strong></td><td><a href="mailto:martabergadaescoda@gmail.com">martabergadaescoda@gmail.com</a></td></tr>
+        <tr><td><strong>Teléfono</strong></td><td>686 143 541</td></tr>
+      </table>
+
+      <h2>2. Datos que recopilamos y finalidades</h2>
+      <p>AulaRepàs trata los siguientes datos personales con las finalidades indicadas:</p>
+      <table>
+        <tr><th>Datos</th><th>Finalidad</th><th>Base legal</th></tr>
+        <tr>
+          <td>Nombre, teléfono, correo electrónico, nivel educativo, asignatura</td>
+          <td>Gestión de solicitudes de información y matrícula a través del formulario de contacto</td>
+          <td>Consentimiento del interesado (art. 6.1.a RGPD)</td>
+        </tr>
+        <tr>
+          <td>Historial de conversación con el chatbot</td>
+          <td>Atención y asistencia al usuario mediante el asistente virtual 24/7</td>
+          <td>Consentimiento del interesado (art. 6.1.a RGPD)</td>
+        </tr>
+        <tr>
+          <td>Nombre, datos del alumno y familia</td>
+          <td>Prestación del servicio educativo contratado</td>
+          <td>Ejecución de contrato (art. 6.1.b RGPD)</td>
+        </tr>
+        <tr>
+          <td>Datos de facturación</td>
+          <td>Cumplimiento de obligaciones fiscales y contables</td>
+          <td>Obligación legal (art. 6.1.c RGPD)</td>
+        </tr>
+      </table>
+
+      <h2>3. Menores de edad</h2>
+      <p>AulaRepàs ofrece servicios a menores de edad. En el caso de alumnos menores de 14 años, el tratamiento de sus datos requiere el consentimiento expreso de sus padres o tutores legales. Los padres o tutores que faciliten datos de menores a su cargo garantizan tener capacidad legal para hacerlo y que los datos proporcionados son exactos.</p>
+
+      <h2>4. Destinatarios y transferencias internacionales</h2>
+      <p>Sus datos no serán cedidos a terceros salvo obligación legal. Los encargados del tratamiento que acceden a sus datos son:</p>
+      <ul>
+        <li><strong>n8n (automatización y chatbot):</strong> plataforma self-hosted alojada en servidores propios del responsable. No implica transferencia internacional de datos.</li>
+        <li><strong>Google LLC (Google Sheets / Gmail):</strong> para almacenamiento de formularios y comunicaciones. Google LLC está adherida al marco UE-EE. UU. de privacidad de datos (Data Privacy Framework), lo que garantiza un nivel de protección adecuado conforme al art. 45 RGPD.</li>
+        <li><strong>Netlify, Inc. (alojamiento web):</strong> proveedor de hosting. Netlify dispone de Cláusulas Contractuales Tipo aprobadas por la Comisión Europea.</li>
+      </ul>
+
+      <h2>5. Plazo de conservación</h2>
+      <table>
+        <tr><th>Tipo de dato</th><th>Plazo de conservación</th></tr>
+        <tr><td>Solicitudes de información (no convertidas en alumno)</td><td>1 año desde la solicitud o hasta que se ejerza el derecho de supresión</td></tr>
+        <tr><td>Datos de alumnos activos</td><td>Durante la relación contractual y 5 años adicionales (responsabilidad civil)</td></tr>
+        <tr><td>Datos de facturación</td><td>6 años (obligación fiscal, art. 30 Código de Comercio)</td></tr>
+        <tr><td>Historial del chatbot</td><td>Duración de la sesión; los registros se eliminan a los 30 días</td></tr>
+      </table>
+
+      <h2>6. Sus derechos</h2>
+      <p>De acuerdo con el RGPD y la LOPD-GDD, puede ejercer los siguientes derechos:</p>
+      <div class="rights-grid">
+        <div class="right-card"><strong>Acceso</strong><span>Conocer qué datos tratamos sobre usted.</span></div>
+        <div class="right-card"><strong>Rectificación</strong><span>Corregir datos inexactos o incompletos.</span></div>
+        <div class="right-card"><strong>Supresión</strong><span>Solicitar la eliminación de sus datos.</span></div>
+        <div class="right-card"><strong>Oposición</strong><span>Oponerse al tratamiento de sus datos.</span></div>
+        <div class="right-card"><strong>Limitación</strong><span>Restringir el tratamiento en determinados casos.</span></div>
+        <div class="right-card"><strong>Portabilidad</strong><span>Recibir sus datos en formato estructurado.</span></div>
+        <div class="right-card"><strong>Retirar consentimiento</strong><span>Sin efecto retroactivo sobre tratamientos previos.</span></div>
+        <div class="right-card"><strong>Reclamación</strong><span>Ante la AEPD: <a href="https://www.aepd.es">www.aepd.es</a></span></div>
+      </div>
+      <p>Para ejercer sus derechos, envíe un correo a <a href="mailto:martabergadaescoda@gmail.com">martabergadaescoda@gmail.com</a> adjuntando una copia de su DNI o documento de identificación equivalente. Responderemos en el plazo máximo de un mes.</p>
+
+      <h2>7. Medidas de seguridad</h2>
+      <p>AulaRepàs ha adoptado las medidas técnicas y organizativas necesarias para garantizar la seguridad de los datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado. Entre ellas: transmisión cifrada mediante HTTPS/TLS, acceso restringido por credenciales, y actualización periódica de los sistemas de tratamiento.</p>
+
+      <h2>8. Modificaciones</h2>
+      <p>Esta Política de Privacidad puede actualizarse en cualquier momento. Publicaremos los cambios en esta misma página con la fecha de actualización correspondiente.</p>
+    </div><!-- /lang-es -->
+
+    <!-- ══════════ CATALÀ ══════════ -->
+    <div class="lang-block" id="lang-ca">
+      <span class="update-date">Última actualització: març 2025</span>
+
+      <h2>1. Responsable del tractament</h2>
+      <table>
+        <tr><th>Dada</th><th>Informació</th></tr>
+        <tr><td><strong>Responsable</strong></td><td>Marta Bergadà Escoda</td></tr>
+        <tr><td><strong>NIF</strong></td><td>38141266K</td></tr>
+        <tr><td><strong>Domicili</strong></td><td>C/ Jaume I, 10, 08206 Sabadell (Barcelona)</td></tr>
+        <tr><td><strong>Correu electrònic</strong></td><td><a href="mailto:martabergadaescoda@gmail.com">martabergadaescoda@gmail.com</a></td></tr>
+        <tr><td><strong>Telèfon</strong></td><td>686 143 541</td></tr>
+      </table>
+
+      <h2>2. Dades que recollim i finalitats</h2>
+      <table>
+        <tr><th>Dades</th><th>Finalitat</th><th>Base legal</th></tr>
+        <tr>
+          <td>Nom, telèfon, correu electrònic, nivell educatiu, assignatura</td>
+          <td>Gestió de sol·licituds d'informació i matrícula a través del formulari de contacte</td>
+          <td>Consentiment de l'interessat (art. 6.1.a RGPD)</td>
+        </tr>
+        <tr>
+          <td>Historial de conversa amb el xatbot</td>
+          <td>Atenció i assistència a l'usuari mitjançant l'assistent virtual 24/7</td>
+          <td>Consentiment de l'interessat (art. 6.1.a RGPD)</td>
+        </tr>
+        <tr>
+          <td>Nom, dades de l'alumne i família</td>
+          <td>Prestació del servei educatiu contractat</td>
+          <td>Execució de contracte (art. 6.1.b RGPD)</td>
+        </tr>
+        <tr>
+          <td>Dades de facturació</td>
+          <td>Compliment d'obligacions fiscals i comptables</td>
+          <td>Obligació legal (art. 6.1.c RGPD)</td>
+        </tr>
+      </table>
+
+      <h2>3. Menors d'edat</h2>
+      <p>AulaRepàs ofereix serveis a menors d'edat. En el cas d'alumnes menors de 14 anys, el tractament de les seves dades requereix el consentiment exprés dels seus pares o tutors legals.</p>
+
+      <h2>4. Destinataris i transferències internacionals</h2>
+      <p>Les seves dades no seran cedides a tercers, tret d'obligació legal. Els encarregats del tractament que accedeixen a les vostres dades són:</p>
+      <ul>
+        <li><strong>n8n (automatització i xatbot):</strong> plataforma self-hosted allotjada en servidors propis del responsable.</li>
+        <li><strong>Google LLC (Google Sheets / Gmail):</strong> adherida al marc UE-EUA de privacitat de dades (Data Privacy Framework).</li>
+        <li><strong>Netlify, Inc. (allotjament web):</strong> disposa de Clàusules Contractuals Tipus aprovades per la Comissió Europea.</li>
+      </ul>
+
+      <h2>5. Termini de conservació</h2>
+      <table>
+        <tr><th>Tipus de dada</th><th>Termini de conservació</th></tr>
+        <tr><td>Sol·licituds d'informació</td><td>1 any des de la sol·licitud</td></tr>
+        <tr><td>Dades d'alumnes actius</td><td>Durant la relació contractual i 5 anys addicionals</td></tr>
+        <tr><td>Dades de facturació</td><td>6 anys (obligació fiscal)</td></tr>
+        <tr><td>Historial del xatbot</td><td>Durada de la sessió; els registres s'eliminen als 30 dies</td></tr>
+      </table>
+
+      <h2>6. Els seus drets</h2>
+      <div class="rights-grid">
+        <div class="right-card"><strong>Accés</strong><span>Conèixer quines dades tractem sobre vostè.</span></div>
+        <div class="right-card"><strong>Rectificació</strong><span>Corregir dades inexactes o incompletes.</span></div>
+        <div class="right-card"><strong>Supressió</strong><span>Sol·licitar l'eliminació de les vostres dades.</span></div>
+        <div class="right-card"><strong>Oposició</strong><span>Oposar-vos al tractament de les vostres dades.</span></div>
+        <div class="right-card"><strong>Limitació</strong><span>Restringir el tractament en determinats casos.</span></div>
+        <div class="right-card"><strong>Portabilitat</strong><span>Rebre les vostres dades en format estructurat.</span></div>
+        <div class="right-card"><strong>Retirar consentiment</strong><span>Sense efecte retroactiu.</span></div>
+        <div class="right-card"><strong>Reclamació</strong><span>Davant l'AEPD: <a href="https://www.aepd.es">www.aepd.es</a></span></div>
+      </div>
+      <p>Per exercir els vostres drets, envieu un correu a <a href="mailto:martabergadaescoda@gmail.com">martabergadaescoda@gmail.com</a> adjuntant una còpia del vostre DNI. Respondrem en un termini màxim d'un mes.</p>
+
+      <h2>7. Mesures de seguretat</h2>
+      <p>AulaRepàs ha adoptat les mesures tècniques i organitzatives necessàries per garantir la seguretat de les dades personals, incloent transmissió xifrada (HTTPS/TLS), accés restringit per credencials i actualització periòdica dels sistemes.</p>
+
+      <h2>8. Modificacions</h2>
+      <p>Aquesta Política de Privacitat pot actualitzar-se en qualsevol moment. Publicarem els canvis en aquesta mateixa pàgina amb la data d'actualització corresponent.</p>
+    </div><!-- /lang-ca -->
+
+    <!-- ══════════ ENGLISH ══════════ -->
+    <div class="lang-block" id="lang-en">
+      <span class="update-date">Last updated: March 2025</span>
+
+      <h2>1. Data controller</h2>
+      <table>
+        <tr><th>Field</th><th>Information</th></tr>
+        <tr><td><strong>Controller</strong></td><td>Marta Bergadà Escoda</td></tr>
+        <tr><td><strong>Tax ID (NIF)</strong></td><td>38141266K</td></tr>
+        <tr><td><strong>Address</strong></td><td>C/ Jaume I, 10, 08206 Sabadell, Barcelona (Spain)</td></tr>
+        <tr><td><strong>Email</strong></td><td><a href="mailto:martabergadaescoda@gmail.com">martabergadaescoda@gmail.com</a></td></tr>
+        <tr><td><strong>Phone</strong></td><td>+34 686 143 541</td></tr>
+      </table>
+
+      <h2>2. Data we collect and purposes</h2>
+      <table>
+        <tr><th>Data</th><th>Purpose</th><th>Legal basis</th></tr>
+        <tr>
+          <td>Name, phone, email, educational level, subject</td>
+          <td>Processing information and enrolment requests via the contact form</td>
+          <td>Consent of the data subject (Art. 6.1.a GDPR)</td>
+        </tr>
+        <tr>
+          <td>Chatbot conversation history</td>
+          <td>User assistance via the 24/7 virtual assistant</td>
+          <td>Consent of the data subject (Art. 6.1.a GDPR)</td>
+        </tr>
+        <tr>
+          <td>Student and family details</td>
+          <td>Provision of contracted educational services</td>
+          <td>Performance of a contract (Art. 6.1.b GDPR)</td>
+        </tr>
+        <tr>
+          <td>Billing data</td>
+          <td>Compliance with tax and accounting obligations</td>
+          <td>Legal obligation (Art. 6.1.c GDPR)</td>
+        </tr>
+      </table>
+
+      <h2>3. Minors</h2>
+      <p>AulaRepàs provides services to minors. For students under 14 years of age, data processing requires the express consent of their parents or legal guardians.</p>
+
+      <h2>4. Recipients and international transfers</h2>
+      <p>Your data will not be shared with third parties except where legally required. Data processors with access to your data:</p>
+      <ul>
+        <li><strong>n8n (automation & chatbot):</strong> self-hosted platform on servers controlled by the data controller. No international transfer.</li>
+        <li><strong>Google LLC (Google Sheets / Gmail):</strong> Google LLC is certified under the EU–US Data Privacy Framework, ensuring adequate protection under Art. 45 GDPR.</li>
+        <li><strong>Netlify, Inc. (web hosting):</strong> operates under Standard Contractual Clauses approved by the European Commission.</li>
+      </ul>
+
+      <h2>5. Retention periods</h2>
+      <table>
+        <tr><th>Data type</th><th>Retention period</th></tr>
+        <tr><td>Enquiries (not converted to student)</td><td>1 year from the request</td></tr>
+        <tr><td>Active student data</td><td>Duration of the contract + 5 years</td></tr>
+        <tr><td>Billing data</td><td>6 years (tax obligation)</td></tr>
+        <tr><td>Chatbot history</td><td>Session duration; logs deleted after 30 days</td></tr>
+      </table>
+
+      <h2>6. Your rights</h2>
+      <div class="rights-grid">
+        <div class="right-card"><strong>Access</strong><span>Know what data we hold about you.</span></div>
+        <div class="right-card"><strong>Rectification</strong><span>Correct inaccurate or incomplete data.</span></div>
+        <div class="right-card"><strong>Erasure</strong><span>Request deletion of your data.</span></div>
+        <div class="right-card"><strong>Objection</strong><span>Object to the processing of your data.</span></div>
+        <div class="right-card"><strong>Restriction</strong><span>Restrict processing in certain cases.</span></div>
+        <div class="right-card"><strong>Portability</strong><span>Receive your data in structured format.</span></div>
+        <div class="right-card"><strong>Withdraw consent</strong><span>Without retroactive effect.</span></div>
+        <div class="right-card"><strong>Complaint</strong><span>To the AEPD: <a href="https://www.aepd.es">www.aepd.es</a></span></div>
+      </div>
+      <p>To exercise your rights, email <a href="mailto:martabergadaescoda@gmail.com">martabergadaescoda@gmail.com</a> with a copy of your ID document. We will respond within one month.</p>
+
+      <h2>7. Security measures</h2>
+      <p>AulaRepàs has implemented appropriate technical and organisational measures to protect personal data, including HTTPS/TLS encryption, credential-based access controls, and regular system updates.</p>
+
+      <h2>8. Amendments</h2>
+      <p>This Privacy Policy may be updated at any time. Changes will be published on this page with th
